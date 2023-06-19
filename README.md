@@ -51,12 +51,12 @@ A funcionalidade proposta será implementada como um microserviço separado no s
 
 A implementação utilizará as seguintes tecnologias e ferramentas:
 
-Linguagem de programação: Python
-Framework web: Django
-Banco de dados: PostgreSQL
-Serviço de envio de e-mails: SendGrid
-Contêinerização: Docker
-Orquestração de contêineres: Docker Compose
+- Linguagem de programação: Python
+- Framework web: Django
+- Banco de dados: PostgreSQL
+- Serviço de envio de e-mails: SendGrid
+- Contêinerização: Docker
+- Orquestração de contêineres: Docker Compose
 
 
 
@@ -64,11 +64,11 @@ Orquestração de contêineres: Docker Compose
 
 Para o correto funcionamento da funcionalidade proposta, os requisitos de hardware e software serão:
 
-Servidor com pelo menos 2 CPU e 4 GB de RAM
-Sistema operacional: Linux (Ubuntu 20.04 LTS)
-Docker Engine instalado (versão 20.10 ou superior)
-Docker Compose instalado (versão 1.29 ou superior)
-Python 3.8 instalado
+- Servidor com pelo menos 2 CPU e 4 GB de RAM
+- Sistema operacional: Linux (Ubuntu 20.04 LTS)
+- Docker Engine instalado (versão 20.10 ou superior)
+- Docker Compose instalado (versão 1.29 ou superior)
+- Python 3.8 instalado
 
 
 
@@ -76,12 +76,12 @@ Python 3.8 instalado
 
 Quando uma nova tarefa é atribuída a um usuário, o fluxo de dados seguirá a seguinte sequência:
 
-O microserviço receberá uma requisição HTTP contendo os detalhes da tarefa e o usuário atribuído.
-O microserviço salvará a tarefa no banco de dados PostgreSQL.
-Será realizada uma consulta ao banco de dados para obter as informações completas da tarefa.
-Utilizando o serviço SendGrid, um e-mail de notificação será enviado para o usuário atribuído contendo os detalhes da tarefa.
-Integrações Externas
-Será necessário configurar as credenciais do serviço SendGrid no ambiente de produção para permitir o envio de e-mails de notificação. As informações de autenticação serão armazenadas em variáveis de ambiente protegidas.
+- O microserviço receberá uma requisição HTTP contendo os detalhes da tarefa e o usuário atribuído.
+- O microserviço salvará a tarefa no banco de dados PostgreSQL.
+- Será realizada uma consulta ao banco de dados para obter as informações completas da tarefa.
+- Utilizando o serviço SendGrid, um e-mail de notificação será enviado para o usuário atribuído contendo os detalhes da tarefa.
+- Integrações Externas
+- Será necessário configurar as credenciais do serviço SendGrid no ambiente de produção para permitir o envio de e-mails de notificação. As informações de autenticação serão armazenadas em variáveis de ambiente protegidas.
 
 ### Segurança
 
